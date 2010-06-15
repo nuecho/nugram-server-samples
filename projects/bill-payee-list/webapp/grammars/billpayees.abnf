@@ -1,0 +1,25 @@
+#ABNF 1.0 UTF-8;
+
+language fr-CA;
+mode voice;
+tag-format <semantics/1.0>;
+
+root $billpayees;
+
+public $billpayees = 
+    @alt
+	    @for (entry : entries)
+	    	@call processEntry (entry)
+	    @end
+    @end
+;
+
+@define processEntry (entry) :
+    (@alt 
+         @word entry.name
+         @for (alias : entry.aliases)
+             @word alias
+         @end
+     @end
+     @tag "out.symbol = '" entry.symbol "';" @end)
+@end

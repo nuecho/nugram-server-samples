@@ -1,0 +1,30 @@
+<translation-rules>
+  <rule name=".gso to .grxml" active="true" context="Runtime">
+    <condition target="Extension" operator="is" pattern="gso"/>
+    <action target="Extension" value="grxml"/>
+  </rule>
+  <rule name=".gram to .grxml" active="true" context="Runtime">
+    <condition target="Extension" operator="is" pattern="gram"/>
+    <action target="Extension" value="grxml"/>
+  </rule>
+  <rule name=".ngo to .abnf" active="true" context="Runtime">
+    <condition target="Extension" operator="is" pattern="ngo"/>
+    <action target="Extension" value="abnf"/>
+  </rule>
+  <rule name=".abnf to .grxml" active="true" context="ABNF to GrXML Conversion">
+    <condition target="Extension" operator="is" pattern="abnf"/>
+    <action target="Extension" value="grxml"/>
+  </rule>
+  <rule name=".abnf to .gsl" active="true" context="ABNF to GSL Conversion">
+    <condition target="Extension" operator="is" pattern="abnf"/>
+    <action target="Extension" value="gsl"/>
+  </rule>
+  <rule name=".grxml to .abnf" active="true" context="GrXML to ABNF Conversion">
+    <condition target="Extension" operator="is" pattern="grxml"/>
+    <action target="Extension" value="abnf"/>
+  </rule>
+  <rule name=".gsl to .abnf" active="true" context="GSL to ABNF Conversion">
+    <condition target="Extension" operator="is" pattern="gsl"/>
+    <action target="Extension" value="abnf"/>
+  </rule>
+</translation-rules>

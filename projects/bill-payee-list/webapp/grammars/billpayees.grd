@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage>
+  <contexts>
+    <java-context id="CSV - Java" query="">
+      <qualified-class-name>com.nuecho.samples.grammars.BillPayeeList</qualified-class-name>
+      <parameters>
+        <parameter name="symbol" value="HYDROQC"/>
+        <parameter name="symbol" value="BMO.TO"/>
+        <parameter name="symbol" value="NA.TO"/>
+        <parameter name="symbol" value="T"/>
+      </parameters>
+    </java-context>
+  </contexts>
+  <sentences/>
+  <rules/>
+</coverage>
