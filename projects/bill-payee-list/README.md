@@ -16,12 +16,9 @@ Configuration
 
 In `webapp/WEB-INF/web.xml`, make sure to set the following:
 
-* The `com.nuecho.application.grammarserver.license-directory` context
-  parameter must be set to the name of the directory containing the
-  NuGram Server license.
+* The `com.nuecho.application.grammarserver.license-directory` context parameter must be set to the name of the directory containing the NuGram Server license.
 
-* the `com.nuecho.application.grammarserver.context-initializers`
-  initialization parameter for the `/grammars` servlet must be set to
+* the `com.nuecho.application.grammarserver.context-initializers` initialization parameter for the `/grammars` servlet must be set to
 
     billpayees.abnf=com.nuecho.samples.grammars.BillPayeeList
 
