@@ -20,7 +20,7 @@ In `webapp/WEB-INF/web.xml`, make sure to set the following:
 
 * the `com.nuecho.application.grammarserver.context-initializers` initialization parameter for the `/grammars` servlet must be set to
 
-    billpayees.abnf=com.nuecho.samples.grammars.BillPayeeList
+    `billpayees.abnf=com.nuecho.samples.grammars.BillPayeeList`
 
 
 Running the demo
